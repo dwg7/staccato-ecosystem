@@ -1,0 +1,28 @@
+# Handover Notes
+
+Read this first in any new session on this repo. Written in English per `CLAUDE.md`'s language convention.
+
+## What's true as of 2026-09-03
+
+- **Repo just created and scaffolded** by hfu via a `staccato-spec`-session Claude Code agent (the same session that had just drafted `UNopenGIS/staccato-spec`'s ADR 0008 on `basemap` selection, itself sourced from a chukei-session handoff — see that ADR's Context for the cross-session lineage this all grew out of). Nothing beyond this scaffold exists yet: `README.md`, `CLAUDE.md`, `DECISIONS.md` (D1 only), `HANDOVER.md` (this file), `LICENSE`.
+- **The actual methodology has not been designed yet.** That is the next task for whichever session picks this repo up.
+
+## The task ahead
+
+Design a **generalized, deployment-agnostic collaboration methodology**: how a Staff-role deployment (any Staff, not just Chukei) can help its users move from "I have geospatial content" to "here's a concrete collaboration plan with a specific partner, grounded in real map links" — for domains like education, disaster prevention, land surveying, museums, research, infrastructure operators, and local community groups.
+
+**Source material**: [`dwg7/chukei` issue #3](https://github.com/dwg7/chukei/issues/3) is the origin of this idea — it asks for a Gennai-specific, single-file "ちゅうけい連携エージェント" prompt (`CHUKEI_COLLABORATION_PROMPT.md`). That issue's request is scoped to Chukei's own hard constraints (self-contained single Markdown file, no includes, GSI Hokkaido's specific partner list, Japanese-only, must embed `CHUKEI_PROMPT.md`'s full existing map-generation rules verbatim). **Do not just copy it here** — the job is to extract the reusable, deployment-agnostic core and leave Chukei's Gennai-specific packaging behind in `dwg7/chukei`. Read the issue in full (`gh issue view 3 --repo dwg7/chukei`) before starting; it may have moved since this was written — check whether `CHUKEI_COLLABORATION_PROMPT.md` already exists there.
+
+Raw material pulled from issue #3, for a running start (structure follows the issue's own sections; translate/generalize deliberately rather than just relabeling):
+
+**10 basic principles it proposes** (issue #3 §2): start from the partner's own logic, not the content-provider's; ask what the partner wants to know/do, not which map to show them; don't aim to train the partner on GIS operation; reduce steps-to-a-map so more time goes to observation/comparison/judgment/dialogue; end in an actual openable map link, not just an idea; distinguish what a map can and can't tell you; when there's no direct-match data, consider a near substitute, a wider area, or combination with other material; prioritize a minimal setup the partner can try tomorrow; note a follow-on/expansion idea when relevant; phrase the "question to the map" in the partner's natural words, not technical layer names.
+
+**Representative collaboration patterns it lists** (issue #3 §6, for inspiration, not a checklist to force-fit): regional/school education (compare current vs. historical aerial photos, elevation, land-classification for a familiar place — centered on the learner's own questions, not tool operation); shared disaster-risk awareness (terrain, flood/landslide hazard zones, post-disaster photos, checked against official disaster info rather than over-asserting from one map); field-survey preparation (terrain/roads/elevation/aerial photos/past-disaster info reviewed before going out, to plan what to observe on-site); explanation & consensus-building (distributing the *same* map link, same state, to meeting participants so everyone starts from the same view — "open this link and look at this place," not "operate this map"); local-resource discovery (landscape/industry/transport/settlement formation inferred from terrain + historical photos, for museums/tourism/community-building use); data-gap discovery (treating "no matching map exists" or "no data for this area" as a real, useful finding — surfacing what's missing and who might hold it, as the *next* collaboration topic, not a dead end).
+
+**A worked example it includes** (issue #3 §7, useful as a concrete calibration case, but explicitly warned against over-generalizing from — "must not skew every request toward school education or this one neighborhood"): a 45-minute 4th-grade social-studies lesson ("why did this town grow up here?"), structured as 5 min write questions → 10 min open the corresponding maps → 15 min small-group comparison → 10 min share what the map does/doesn't tell you → 5 min write the next question to investigate. General principles it distills: start from the partner's question; minimize operation-instruction; never decide from one map alone; compare multiple maps/eras; state explicitly what's unknown; connect outward to further investigation; leave the map link itself in the deliverable.
+
+## Open questions for whoever picks this up
+
+- Should the methodology doc(s) here be written to be directly *quotable* into a Staff-role prompt (like Chukei's), or are they meant as human-facing design guidance that a *human* prompt-author consults when building a Staff-role collaboration feature? These have different shapes — the former needs to be terse and instructional in the second person; the latter can be explanatory.
+- Format: a single `COLLABORATION-METHODOLOGY.md`, or split by concern (principles / patterns / worked examples), the way `dwg7/cafebabe` splits `patterns/` by topic?
+- Confirm with hfu whether `dwg7/chukei` issue #3 should be updated/commented to point at this repo once methodology work is underway here, so the two efforts don't independently diverge — this was flagged as a possible follow-up but not acted on when this repo was founded.
