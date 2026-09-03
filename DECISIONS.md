@@ -4,6 +4,13 @@ ADR-lite log for this project. English, per `CLAUDE.md`'s language convention. A
 
 ---
 
+### D6 — `dwg7/ferspas57` founded as this repo's international-cooperation counterpart to `chukei`
+**Date**: 2026-09-03
+**What**: At hfu's request, this session created `dwg7/ferspas57` — a technical collaboration connecting Staccato's Library to FERSPAS (FAO's Essential Remote Sensing Data Product Portal), split off from [`UNopenGIS/7#932`](https://github.com/UNopenGIS/7/issues/932) via a new founding issue, [`UNopenGIS/7#997`](https://github.com/UNopenGIS/7/issues/997). Scaffolded with the same `README.md`/`CLAUDE.md`/`HANDOVER.md`/`DECISIONS.md`/`LICENSE` pattern as this repo, but English throughout (not `.ja.md`/`.en.md`-paired) since it is explicitly international/FAO-facing rather than alternating contexts. `dwg7/ferspas57`'s `CLAUDE.md` explicitly frames it as this repo's structural counterpart on the 国際協力 (international-cooperation) side, to `dwg7/chukei`'s 国内実施 (domestic-implementation) side — matching this repo's own founding concept (see the top-level `CLAUDE.md` "Content-document language policy" section, and `README.md`'s framing of value-proposition documentation for concrete domains).
+**Why**: hfu confirmed the plan (repo creation, dedicated Claude Code session, knowledge flowing back here) mirrors exactly how this repo itself was founded from a `staccato-spec` session (D1), and asked that `ferspas57` document its context, positive collaborative intent toward FAO CSI's team, and significance for the UN Open GIS Initiative carefully — done in its own `CLAUDE.md`, not duplicated here. This repo's stake in `ferspas57` is narrow: absorb the *collaboration-process* learnings (how international, cross-organization connection actually gets done) when they arrive, not the STAC/`martin catalog` technical substance, which belongs in `staccato-spec` instead.
+
+---
+
 ### D5 — Second field input: real end-user session report folds two new insights into `methodology/`
 **Date**: 2026-09-03
 **What**: hfu, in the role of GSI Hokkaido Regional Survey Department director actually using the deployed `CHUKEI_COLLABORATION_PROMPT.md` (not in a `staccato-ecosystem`-authoring capacity), ran several real B-type (連携企画依頼) collaboration-planning sessions in a separate chat session and manually relayed a summary report into this repo's session. Three scenarios were worked: a municipal disaster-preparedness briefing, a comparison of a direct student-facing lesson vs. a teacher-training session on the same topic, and a keynote addressing an industry/academia/government audience at once. No bugs or spec/catalog change requests were reported — all map links used real, existing catalog identifiers per `CHUKEI_PROMPT.md`'s existing rules.
