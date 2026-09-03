@@ -4,6 +4,13 @@ ADR-lite log for this project. English, per `CLAUDE.md`'s language convention. A
 
 ---
 
+### D4 — First validation: `dwg7/chukei` built `CHUKEI_COLLABORATION_PROMPT.md` from `methodology/`, no corrections needed
+**Date**: 2026-09-03
+**What**: The `dwg7/chukei` session closed issue #3 and pushed `CHUKEI_COLLABORATION_PROMPT.md` (chukei commit `b545c41`), built by adapting `methodology/*.ja.md` into Chukei's concrete vocabulary (コンテンツ→地図/spiccatoリンク, デプロイメント固有規則→`req`/`opt`/`rstyle`/`ostyle`/`basemap` etc.) rather than re-deriving from issue #3's raw text. Reported back over cross-session messaging: no corrections or structural gaps found in the methodology docs while adapting; all 7 of issue #3's acceptance tests passed a static design review against the built prompt; the build script embeds `CHUKEI_PROMPT.md`'s on-disk content verbatim (byte-for-byte) so the two files can't drift apart on the map-generation side.
+**Why**: this is the first real test of whether `methodology/` is actually reusable rather than accidentally Chukei-shaped — the open item D3 and `HANDOVER.md` flagged. A clean adapt-with-no-corrections outcome is a good signal, but it's still the *same* deployment the methodology was extracted from, not a structurally different one — see the updated open follow-up in `HANDOVER.md`.
+
+---
+
 ### D3 — Methodology shape: human-facing design guidance, split by concern, `methodology/`
 **Date**: 2026-09-03
 **What**: Confirmed three open questions from `HANDOVER.md` with hfu before starting the methodology write-up: (1) the documents in `methodology/` are **human-facing design guidance** for whoever builds a Staff deployment's collaboration feature, not text meant to be pasted verbatim into a system prompt — adapting this into deployment-specific prompt text is a separate, later step done in that deployment's own repo; (2) content is **split by concern** into topic files (`principles`, `request-types`, `process`, `output-structure`, `patterns`, `quality-checklist`, `worked-example`), matching `dwg7/cafebabe`'s `patterns/` convention, rather than one monolithic file; (3) `dwg7/chukei` issue #3 gets a comment **now**, pointing at this repo, rather than waiting — so the two efforts don't independently diverge while chukei's own `CHUKEI_COLLABORATION_PROMPT.md` work is still unstarted. First pass of all seven `methodology/*.ja.md` files written this session, generalized from issue #3's principles/patterns/process/worked-example, with Chukei/GSI/Gennai-specific packaging (single-file constraint, catalog IDs, fixed response formats) deliberately left out — deployments reference their own Cartographer-specific rules for that.
