@@ -6,7 +6,7 @@ Use-case and value-proposition documentation for the [Staccato](https://github.c
 
 ## Status
 
-Just created (2026-09-03). Scaffold only — no methodology content yet. See [`HANDOVER.md`](HANDOVER.md) for the current state and the immediate next task.
+First methodology pass complete (2026-09-03): [`methodology/`](methodology/) holds deployment-agnostic collaboration-planning guidance, generalized from `dwg7/chukei` issue #3. See [`HANDOVER.md`](HANDOVER.md) for the current state and next task.
 
 ## Relationship to sibling projects
 

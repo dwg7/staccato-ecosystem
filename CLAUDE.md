@@ -2,7 +2,15 @@
 
 Persistent context for Claude Code sessions working in this repository (`dwg7/staccato-ecosystem`, cloned at `/Users/hfu/staccato-ecosystem`). If a session starts here, read this file, then read `HANDOVER.md` for the current status.
 
-**Language convention**: matches `dwg7`'s established pattern (see `dwg7/chukei`, `dwg7/spiccato`) — meta-documentation (this file, `README.md`, `DECISIONS.md`, `HANDOVER.md`) and methodology text are written in **English**, since `dwg7` is treated as an international project. Concrete instantiations that a specific deployment produces for its own end users (e.g. `dwg7/chukei`'s actual system-prompt text) render in whatever language that deployment's users need — this repo documents the *reusable* methodology, not any one deployment's user-facing wording. Chat with hfu (the maintainer) happens in Japanese regardless of which repo is open.
+**Language convention**: matches `dwg7`'s established pattern (see `dwg7/chukei`, `dwg7/spiccato`) — meta-documentation (this file, `README.md`, `DECISIONS.md`, `HANDOVER.md`) is written in **English**, since `dwg7` is treated as an international project. Chat with hfu (the maintainer) happens in Japanese regardless of which repo is open.
+
+**Content-document language policy** (hfu, 2026-09-03 — see `DECISIONS.md` D2): boilerplate files like `LICENSE` are fixed English-only. Everything else this repo produces as substantive content — the value-proposition/methodology documents that are this repo's actual deliverable — is written as a **`.ja.md` / `.en.md` pair per topic**, not a single bilingual file. A bare `.md` filename (no language suffix) means the content hasn't yet been split/localized either way.
+
+This repo's work alternates between two contexts, matching its founding concept of organic linkage between domestic implementation (国内実施) and international cooperation (国際協力):
+- **Domestic-implementation context**: `.ja.md` is the primary, actively-written language; a batch of content matures there first.
+- **International-cooperation context**: before resuming, sync `.ja.md` → `.en.md` for whatever changed (translation, ja→en direction in practice), then treat `.en.md` as primary and accumulate there.
+
+The two language variants are **not** kept continuously in sync — they're synced at the *transition* between contexts, not on every edit. This is a deliberate, repo-local experiment; it does not apply to other `dwg7`/`UNopenGIS` repos unless explicitly adopted there.
 
 ## What this project is
 
