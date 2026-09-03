@@ -1,8 +1,8 @@
 # Worked Example: 小学校4年生向け授業
 
-[`process.ja.md`](process.ja.md) と [`output-structure.ja.md`](output-structure.ja.md) の使われ方を理解するための、1つの具体的な展開例。
+[`../process.ja.md`](../process.ja.md) と [`../output-structure.ja.md`](../output-structure.ja.md) の使われ方を理解するための、具体的な展開例の1つ。他の例は [`README.md`](README.md) を参照。
 
-**警告**: これは唯一の例であって、標準形ではない。あらゆる相談を学校教育やこの事例の題材へ寄せてはいけない。他の領域（防災、現地調査、業界向け勉強会、博物館など）向けの展開例は、[`patterns.ja.md`](patterns.ja.md) を出発点に別途追加していくべきものであり、現時点ではまだ揃っていない（`HANDOVER.md` 参照）。
+**警告**: あらゆる相談をこの事例（学校教育、この題材）へ寄せてはいけない。この例が扱うのは「地域学習・教育」パターン、かつ相手（学習者）が成果物をその場で直接使う形。学習者ではなく指導者自身の力量形成が目的の場合は [`education-train-the-trainer.ja.md`](education-train-the-trainer.ja.md) のように性格が変わる点に注意。
 
 出典: [`dwg7/chukei` issue #3](https://github.com/dwg7/chukei/issues/3) §7を一般化したもの。
 
@@ -47,4 +47,4 @@
 - 外にある次の調査へつなぐ
 - リンクを成果物に残す
 
-これらは [`principles.ja.md`](principles.ja.md) の10原則と対応している。この例自体を暗記するのではなく、対応関係を確認する材料として使うこと。
+これらは [`../principles.ja.md`](../principles.ja.md) の10原則と対応している。この例自体を暗記するのではなく、対応関係を確認する材料として使うこと。

@@ -14,6 +14,6 @@ This directory holds the *reusable* methodology, not any one deployment's prompt
 - [`request-types.ja.md`](request-types.ja.md) — the three kinds of request a Staff-plus-collaboration deployment needs to tell apart, and why.
 - [`process.ja.md`](process.ja.md) — the 7-step process for turning a collaboration request into a concrete plan.
 - [`output-structure.ja.md`](output-structure.ja.md) — a default document structure for presenting a collaboration plan.
-- [`patterns.ja.md`](patterns.ja.md) — representative collaboration patterns across domains (education, disaster preparedness, field survey, consensus-building, local-resource discovery, data-gap discovery), offered as inspiration rather than a checklist.
+- [`patterns.ja.md`](patterns.ja.md) — representative collaboration patterns across domains (education, disaster preparedness, field survey, consensus-building, local-resource discovery, data-gap discovery, external advocacy to a mixed audience), offered as inspiration rather than a checklist.
 - [`quality-checklist.ja.md`](quality-checklist.ja.md) — a self-check list to run before presenting a plan.
-- [`worked-example.ja.md`](worked-example.ja.md) — one concrete worked example (a 4th-grade social-studies lesson), with an explicit warning against over-generalizing from it. More worked examples across other domains are a natural next addition — see `HANDOVER.md`.
+- [`worked-examples/`](worked-examples/README.md) — concrete worked examples, one or more per pattern where available, each with an explicit warning against over-generalizing from it. Some patterns still have none — see that directory's own README for which.

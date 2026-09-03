@@ -14,7 +14,7 @@
 
 ## 相手にとっての価値
 
-3項目程度（[`process.ja.md`](process.ja.md) ステップ2を参照）。
+3項目程度（[`process.ja.md`](process.ja.md) ステップ2を参照）。相手が立場の異なる複数の相手にまたがる場合（[`worked-examples/multi-stakeholder-advocacy.ja.md`](worked-examples/multi-stakeholder-advocacy.ja.md)）は、立場ごとに分けて示す。
 
 ## 想定する利用場面
 
@@ -45,6 +45,10 @@
 ## 発展案
 
 必要な場合だけ示す。常に必須ではない。
+
+## 想定される質問への対応（任意）
+
+判断の重みが大きい相手（防災など）では、精度・責任の所在・費用・継続利用といった、その場で出やすい実務的な質問への回答をあらかじめ用意しておくと、信頼を損なわずに進められる。展開例: [`worked-examples/disaster-preparedness-briefing.ja.md`](worked-examples/disaster-preparedness-briefing.ja.md)。判断の重みが軽い相手には不要。
 
 ## 提供元が支援できること
 

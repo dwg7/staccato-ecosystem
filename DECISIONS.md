@@ -4,6 +4,20 @@ ADR-lite log for this project. English, per `CLAUDE.md`'s language convention. A
 
 ---
 
+### D5 — Second field input: real end-user session report folds two new insights into `methodology/`
+**Date**: 2026-09-03
+**What**: hfu, in the role of GSI Hokkaido Regional Survey Department director actually using the deployed `CHUKEI_COLLABORATION_PROMPT.md` (not in a `staccato-ecosystem`-authoring capacity), ran several real B-type (連携企画依頼) collaboration-planning sessions in a separate chat session and manually relayed a summary report into this repo's session. Three scenarios were worked: a municipal disaster-preparedness briefing, a comparison of a direct student-facing lesson vs. a teacher-training session on the same topic, and a keynote addressing an industry/academia/government audience at once. No bugs or spec/catalog change requests were reported — all map links used real, existing catalog identifiers per `CHUKEI_PROMPT.md`'s existing rules.
+
+Generalized (stripping GSI-specific place names, the reporting person's identity, and real catalog identifiers) and folded into `methodology/`:
+- `worked-examples/disaster-preparedness-briefing.ja.md` — new worked example for the existing 防災の共通認識 pattern, plus an optional "想定される質問への対応" section added to `output-structure.ja.md` for high-stakes partners.
+- `worked-examples/education-train-the-trainer.ja.md` — new worked example illustrating that a partner who will themselves teach/train others needs a *skill* as their deliverable, not a finished artifact. Added a 最終利用者 vs 展開する立場 distinction to `process.ja.md` step 1.
+- `worked-examples/multi-stakeholder-advocacy.ja.md` — new worked example for a **new pattern**, 対外的な説明・アピール, added to `patterns.ja.md`: a single session addressing several distinct stakeholder types at once, each with a different concern, rather than one partner. Added a single-vs-multiple-audience check to `process.ja.md` step 1.
+- Restructured `worked-example.ja.md` (singular) into a `worked-examples/` directory with a `README.md` index, since there are now four examples across three patterns rather than one.
+
+**Why**: this is qualitatively different validation from D4 — D4 was an implementer's static design review while building the prompt; D5 is an actual end user's real usage surfacing gaps the original issue #3 material didn't anticipate (the train-the-trainer case, the multi-stakeholder case). Both new additions were real gaps, not speculative extensions — worth keeping the bar there (don't add hypothetical patterns without a real scenario behind them). Still same-deployment/same-person as D4, so `HANDOVER.md`'s "validate against a structurally different deployment" open item stands.
+
+---
+
 ### D4 — First validation: `dwg7/chukei` built `CHUKEI_COLLABORATION_PROMPT.md` from `methodology/`, no corrections needed
 **Date**: 2026-09-03
 **What**: The `dwg7/chukei` session closed issue #3 and pushed `CHUKEI_COLLABORATION_PROMPT.md` (chukei commit `b545c41`), built by adapting `methodology/*.ja.md` into Chukei's concrete vocabulary (コンテンツ→地図/spiccatoリンク, デプロイメント固有規則→`req`/`opt`/`rstyle`/`ostyle`/`basemap` etc.) rather than re-deriving from issue #3's raw text. Reported back over cross-session messaging: no corrections or structural gaps found in the methodology docs while adapting; all 7 of issue #3's acceptance tests passed a static design review against the built prompt; the build script embeds `CHUKEI_PROMPT.md`'s on-disk content verbatim (byte-for-byte) so the two files can't drift apart on the map-generation side.
