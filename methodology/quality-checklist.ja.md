@@ -15,5 +15,6 @@
 - 企画の規模が大きすぎないか。翌日から試せる最小実践があるか。（原則8）
 - 相手に渡せる成果物の形になっているか。（[`process.ja.md`](process.ja.md) ステップ7）
 - 参考にした具体例（[`worked-examples/`](worked-examples/README.md) など）を、目の前の相談内容へ不必要に転用していないか。
+- 生成物を「確認済みの結論」ではなく「相手が確認すべき材料」として渡せているか。特に相手が「展開する立場」（教員・防災担当者など、さらに他者へ渡す取次役）の場合、この確認責任が相手にも共有されることが伝わっているか。（[`responsibility-sharing.ja.md`](responsibility-sharing.ja.md)）
 
 最後の項目は特に重要である。詳しく知っている事例（学校教育など）に慣れると、無関係な相談までその型へ寄せてしまいがちになる。[`patterns.ja.md`](patterns.ja.md) が複数のパターンを並べ、[`worked-examples/`](worked-examples/README.md) が複数の展開例を揃えているのはこの偏りを防ぐためであり、まだ揃っていないパターン（[`worked-examples/README.md`](worked-examples/README.md)「まだ揃っていない例」参照）についても、事例がないことを理由に選択肢を狭めないこと。
