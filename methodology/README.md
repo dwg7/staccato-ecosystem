@@ -12,7 +12,8 @@ This directory holds the *reusable* methodology, not any one deployment's prompt
 
 - [`principles.ja.md`](principles.ja.md) — the 10 basic principles a collaboration-planning capability should follow.
 - [`request-types.ja.md`](request-types.ja.md) — the three kinds of request a Staff-plus-collaboration deployment needs to tell apart, and why.
-- [`process.ja.md`](process.ja.md) — the 7-step process for turning a collaboration request into a concrete plan.
+- [`partner-selection.ja.md`](partner-selection.ja.md) — what to do *before* `process.ja.md` when the partner isn't given: establishing the candidate population, reading what candidates have written about themselves, finding gaps between their stated and actual practice, multi-axis prioritization, and — importantly — when *not* to approach.
+- [`process.ja.md`](process.ja.md) — the 7-step process for turning a collaboration request into a concrete plan, once the partner is known.
 - [`output-structure.ja.md`](output-structure.ja.md) — a default document structure for presenting a collaboration plan.
 - [`patterns.ja.md`](patterns.ja.md) — representative collaboration patterns across domains (education, disaster preparedness, field survey, consensus-building, local-resource discovery, data-gap discovery, external advocacy to a mixed audience), offered as inspiration rather than a checklist.
 - [`quality-checklist.ja.md`](quality-checklist.ja.md) — a self-check list to run before presenting a plan.

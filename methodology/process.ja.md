@@ -4,6 +4,8 @@
 
 出典: [`dwg7/chukei` issue #3](https://github.com/dwg7/chukei/issues/3) §4を一般化したもの。
 
+なお、この7ステップは**連携相手が既に決まっている**ことを前提にしている。相手が複数候補から選ばれる場合、あるいは「どこと組むべきか」自体が問いである場合は、先に [`partner-selection.ja.md`](partner-selection.ja.md) を参照し、その結果をステップ1の入力にする。
+
 ## ステップ1: 連携相手を捉える
 
 次を整理する。
