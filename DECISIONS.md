@@ -4,6 +4,22 @@ ADR-lite log for this project. English, per `CLAUDE.md`'s language convention. A
 
 ---
 
+### D13 — D2 resolved by hfu: the `.ja.md`/`.en.md` pair is not a translation pair, and the primacy shift is still ahead of us
+**Date**: 2026-09-12
+**What**: D11 put two options to hfu for repairing D2's never-firing language policy. He chose neither, and supplied a third framing that is better than both. **The Japanese→English primacy shift has not happened yet; it is anticipated, not overdue.** So there was no missed trigger to repair, and Japanese remains the working language for now. More importantly, hfu described what the end state should look like: the two language versions will **not** end up identical in content — **only the technical essentials stay consistent between them**. What happens in the Japanese-speaking world and what happens in the English-speaking world are expected to genuinely differ, and the documents are expected to reflect that.
+
+**Why this is better than either option D11 proposed**: both of D11's options assumed the pair is a *translation* pair, differing only in whether translation is reader-driven (option a) or triggered by an observable event (option b). D11's own discovery — that writing the first `.en.md` forces the question "which version wins on conflict?" — was a symptom of that wrong assumption, not a flaw needing a tiebreaker. Under hfu's framing the question mostly dissolves: **two parallel accumulations, agreeing on technical essentials, diverging on everything the two contexts genuinely experience differently.** Divergence is the design, not drift to be policed. What still needs care is the narrow band where they must agree — the technical essentials — and that is a much smaller and more tractable obligation than keeping two documents in sync.
+
+**Consequences**: continue in `.ja.md`. The two existing translations (`principles.en.md`, `responsibility-sharing.en.md`, D11) remain useful as a starting point for the English side, but their footers — which declare themselves translations and name the Japanese authoritative — describe their origin rather than the intended long-run relationship; revisit that wording when the shift actually begins rather than pre-emptively. The root `CLAUDE.md` still carries D2's original text and should be amended when the shift starts, when it will be clear what actually changed. No `.en.md` files should be written speculatively in the meantime.
+
+### D12.5 — hfu on the `R 8JHs 207` attribution question: layered collaboration arrangements are not excluded
+**Date**: 2026-09-12
+**What**: `volca` raised (D12) whether a GSI regional office may point partner organizations at tiles that a third party serves under its own 測量法 approval — whose authority does such a link rest on? hfu's position: **this arrangement is not excluded.** In his words, such diverse or multi-layered collaboration relationships are not something he intends to celebrate, but neither will he rule them out.
+
+**Why it matters here**: this repo's whole subject is how collaboration actually gets done, and a strict reading — that every link handed to a partner must trace to a single institution's own approval and its own hosting — would have ruled out a large class of real, workable arrangements, including most of what this ecosystem already does (a Cartographer someone else operates, a catalog someone else publishes, tiles someone else converted). hfu's position keeps that space open without treating indirection as a virtue in itself. `volca` continues to carry the internal-procedure version of the question (their A7) — that is about what GSI's own process requires, which is a separate question from whether the arrangement is admissible at all, and their outcome should still be picked up here when it lands.
+
+---
+
 ### D12 — A relayed "already verified working" claim was wrong; verify before passing it on, especially about our own side
 **Date**: 2026-09-11
 **What**: This session told `hfu/volca`'s session that `dwg7/spiccato` had VLCM/VBM rendering "already live and tested," offering a worked `#q=` link for use with volcano disaster-prevention councils. **That claim was never verified by this session.** It originated with `dwg7/spiccato`'s own session (2026-08-21), reached here through `dwg7/kataribe`'s `HANDOVER.md`, and was passed on as established fact — hearsay at two removes, presented as verification. `volca` tried the link, got a blank map canvas, and asked. They were right.
